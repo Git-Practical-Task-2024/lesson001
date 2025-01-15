@@ -1,0 +1,51 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=4, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    <img src="./photo_2024-12-14_14-11-26.jpg"width="200" alt="">
+
+        <h1>Abdullayev Zafar</h1>
+        <h2>ozim haqimda qisqacha men  toshkent shahrida tugilganman yoshligimda juda kop futbol oynlarni korshni yoqtirganman va muntazam oynaganmanam hozirda koproq qzqshm IT ga cunki 2 yil oldn juda kop shu soha boyicha kinolar va har xil videolar korganmdan keyn bu yonalsh menga juda qizqarli tuyilgan va ozm shuni organshi boshlaganman. </h2>
+        <br>
+        <h2>qiziqtrgan savolila bosa bemalol</h2>
+        
+        
+        <input type="text" id="questionInput" placeholder="Savolingizni kiriting...">
+        <br>
+        <br>
+        <button onclick="getAnswer()">Javobni ko'rish</button>
+    
+        <div id="response" class="response"></div>
+    
+        <script>
+            // Savollar va javoblar
+            const questionsAnswers = {
+                "nma gap": "tinc ozindaci?",
+                "necinci ylsz": "2006",
+                "qayerda oqisz": "najot ta'lim",
+                "nma ucun najot ta'lim":"cunki uyerda sharoitlar yaxsh"     
+            }
+
+    
+            // Javob olish funksiyasi
+            function getAnswer() {
+                const userQuestion = document.getElementById("questionInput").value.trim();
+                const responseElement = document.getElementById("response");
+    
+                if (questionsAnswers[userQuestion]) {
+                    responseElement.textContent = `Javob: ${questionsAnswers[userQuestion]}`;
+                } else {
+                    responseElement.textContent = "Uzr, bu savolga javobim yo'q.";
+                }
+            }
+        </script>
+
+<h4>buni meni ijtimoiy taqrmoqlardagi sahifam</h4>
+ <a target="_blank" href="https://t.me/abdlvz0">telegram</a>
+ <a target="_blank" href="https://instagram.com/_abdlvz__">Instagram</a>
+    </body>
+    </html>
